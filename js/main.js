@@ -176,8 +176,6 @@ createRestaurantHTML = restaurant => {
   image.className = "restaurant-img w-full rounded";
   image.src = "./" + DBHelper.imageUrlForRestaurant(restaurant);
 
-  // image.alt = restaurant.name;
-
   li.append(image);
 
   const name = document.createElement("h1");
