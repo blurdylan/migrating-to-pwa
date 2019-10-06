@@ -73,7 +73,20 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
   <script>
-
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("./sw.js", {
+          scope: "./"
+        })
+        .then(function (reg) {
+          // registration successful
+          console.log("Registration succeeded. Scope is " + reg.scope);
+        })
+        .catch(function (error) {
+          // registration failed
+          console.log("Registration failed with " + error);
+        });
+    }
   </script>
 </body>
 
