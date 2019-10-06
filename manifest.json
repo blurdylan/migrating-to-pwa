@@ -1,0 +1,23 @@
+{
+  "name": "La Nyama",
+  "short_name": "🍔🍕🍖",
+  "description": "Find food anywhere in Yaoundé",
+  "dir": "rtl",
+  "display": "standalone",
+  "theme_color": "#2c675f",
+  "background_color": "#252831",
+  "orientation": "any",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "./icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
