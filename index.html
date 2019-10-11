@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0" /> -->
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
   <link href="css/styles.css" rel="stylesheet" />
   <link href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
           Filter Results
         </h2>
         <div class="container mx-auto flex flex-col items-center justify-center">
-
+          <!-- <label for="neighborhoods-select" class="text-white">Select Neighbourhood</label> -->
           <select id="neighborhoods-select"
             class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-1/2 appearance-none leading-normal"
             name="neighborhoods" onchange="updateRestaurants()">
@@ -38,7 +38,7 @@
             </option>
           </select>
 
-
+          <!-- <label for="cuisines-select" class="text-white">Select Cuisine</label> -->
           <select id="cuisines-select"
             class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-1/2 appearance-none"
             name="cuisines" onchange="updateRestaurants()">
@@ -60,6 +60,22 @@
   </footer>
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+  <script>
+    /* if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("./sw.js", {
+          scope: "./"
+        })
+        .then(function (reg) {
+          // registration successful
+          console.log("Registration succeeded. Scope is " + reg.scope);
+        })
+        .catch(function (error) {
+          // registration failed
+          console.log("Registration failed with " + error);
+        });
+    } */
+  </script>
 </body>
 
 </html>
